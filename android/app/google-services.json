@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "770278530258",
+    "project_id": "adadi-780f4",
+    "storage_bucket": "adadi-780f4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770278530258:android:1672aa6b42cef27a37e10b",
+        "android_client_info": {
+          "package_name": "com.example.adadi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkb9M4Ws12YCso2PIy581l8BPgqzHL-No"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
