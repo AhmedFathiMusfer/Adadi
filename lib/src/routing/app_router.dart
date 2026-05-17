@@ -10,6 +10,7 @@ import 'package:adadi/src/features/home/presentation/screens/home_page.dart';
 import 'package:adadi/src/features/onboarding/presentation/screens/onboarding_page.dart';
 import 'package:adadi/src/features/apartments/views/apartment_list_screen.dart';
 import 'package:adadi/src/features/apartments/views/apartment_form_screen.dart';
+import 'package:adadi/src/features/invoices/views/invoice_setup_screen.dart';
 
 final GoRouter appRouter = GoRouter(
   navigatorKey: rootNavigatorKey,
@@ -49,6 +50,11 @@ final GoRouter appRouter = GoRouter(
       path: AppRoutes.apartmentsAdd,
       name: 'apartmentsAdd',
       builder: (context, state) => const ApartmentFormScreen(),
+    ),
+    GoRoute(
+      path: AppRoutes.invoices,
+      name: 'invoices',
+      builder: (context, state) => const InvoiceSetupScreen(),
     ),
   ],
 );
