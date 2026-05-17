@@ -3,7 +3,6 @@ import 'package:adadi/src/imports/packages_imports.dart';
 
 import 'package:adadi/src/features/auth/presentation/providers/session_provider.dart';
 
-
 class HomePage extends ConsumerWidget {
   const HomePage({super.key});
 
@@ -43,16 +42,30 @@ class HomePage extends ConsumerWidget {
                   fontSize: 28.sp,
                 ),
               ),
-                            SizedBox(height: AppSpacing.md.h),
+              SizedBox(height: AppSpacing.md.h),
               Text(
-                user != null && user.name != null ? user.email : ('home.home_subtitle'.tr()),
+                user != null && user.name != null
+                    ? user.email
+                    : ('home.home_subtitle'.tr()),
                 textAlign: TextAlign.center,
                 style: textTheme.bodyMedium?.copyWith(
                   color: colorScheme.onSurfaceVariant,
                   fontSize: 14.sp,
                 ),
               ),
-                          ],
+              SizedBox(height: AppSpacing.xl.h),
+              FilledButton.icon(
+                onPressed: () => context.push(AppRoutes.apartments),
+                icon: const Icon(Icons.apartment),
+                label: const Text('إدارة الشقق'),
+              ),
+              SizedBox(height: AppSpacing.sm.h),
+              FilledButton.tonalIcon(
+                onPressed: () => context.push(AppRoutes.invoices),
+                icon: const Icon(Icons.receipt_long),
+                label: const Text('الفواتير والمسح الذكي'),
+              ),
+            ],
           ),
         ),
       ),
