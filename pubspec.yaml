@@ -75,6 +75,7 @@ dependencies:
 
   # Localization
   easy_localization: ^3.0.8
+  #intl: ^0.18.1
 
   flutter_native_splash: ^2.4.7
 
@@ -98,4 +99,3 @@ flutter:
     # - assets/images/
     - assets/icons/
     - assets/translations/
-    - lib/.env

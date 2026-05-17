@@ -11,4 +11,6 @@ abstract final class AppRoutes {
   static const String login = '/login';
   static const String signup = '/signup';
   static const String forgotPassword = '/forgot-password';
+  static const String apartments = '/apartments';
+  static const String apartmentsAdd = '/apartments/add';
 }
