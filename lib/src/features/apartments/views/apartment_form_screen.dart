@@ -54,7 +54,7 @@ class _ApartmentFormScreenState extends State<ApartmentFormScreen> {
     return Directionality(
       textDirection: TextDirection.rtl,
       child: Scaffold(
-        appBar: AppBar(title: Text(isEdit ? 'تعديل الوحدة' : 'إضافة وحدة')),
+        appBar: AppBar(title: Text(isEdit ? 'تعديل  شقه' : 'إضافة شقه')),
         body: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Form(
@@ -64,9 +64,9 @@ class _ApartmentFormScreenState extends State<ApartmentFormScreen> {
                 children: [
                   TextFormField(
                       controller: _unitController,
-                      decoration: _dec(label: 'رقم الوحدة', icon: Icons.home),
+                      decoration: _dec(label: 'رقم الشقه', icon: Icons.home),
                       validator: (v) => (v == null || v.trim().isEmpty)
-                          ? 'الرجاء إدخال رقم الوحدة'
+                          ? 'الرجاء إدخال رقم الشقه'
                           : null),
                   const SizedBox(height: 12),
                   TextFormField(
@@ -114,7 +114,7 @@ class _ApartmentFormScreenState extends State<ApartmentFormScreen> {
                               padding:
                                   const EdgeInsets.symmetric(vertical: 14.0),
                               child: Text(
-                                  isEdit ? 'حفظ التغييرات' : 'إضافة وحدة',
+                                  isEdit ? 'حفظ التغييرات' : 'إضافة الشقه',
                                   style: const TextStyle(fontSize: 16))))),
                 ],
               ),
