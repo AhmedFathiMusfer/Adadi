@@ -13,7 +13,6 @@ Future<void> main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   await EasyLocalization.ensureInitialized();
-  // await dotenv.load(fileName: '.env');
 
   await AppConfig.init();
 
