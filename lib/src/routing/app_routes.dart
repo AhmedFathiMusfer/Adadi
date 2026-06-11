@@ -13,5 +13,7 @@ abstract final class AppRoutes {
   static const String forgotPassword = '/forgot-password';
   static const String apartments = '/apartments';
   static const String apartmentsAdd = '/apartments/add';
+  static const String readings = '/readings';
+  static const String readingsAdd = '/readings/add';
   static const String invoices = '/invoices';
 }
