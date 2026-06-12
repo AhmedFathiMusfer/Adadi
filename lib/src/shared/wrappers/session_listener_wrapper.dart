@@ -3,7 +3,6 @@ import 'package:adadi/src/imports/packages_imports.dart';
 
 import 'package:adadi/src/features/auth/presentation/providers/session_provider.dart';
 
-
 class SessionListenerWrapper extends ConsumerWidget {
   final Widget child;
   const SessionListenerWrapper({super.key, required this.child});
@@ -16,7 +15,7 @@ class SessionListenerWrapper extends ConsumerWidget {
         if (next.status == SessionStatus.authenticated) {
           context.go(AppRoutes.home);
         } else if (next.status == SessionStatus.unauthenticated) {
-          context.go(AppRoutes.onboarding);
+          // context.go(AppRoutes.chatAi);
         }
       }
     });
