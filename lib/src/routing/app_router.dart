@@ -1,3 +1,4 @@
+import 'package:adadi/src/features/ai/views/chatAi.dart';
 import 'package:go_router/go_router.dart';
 import 'package:adadi/src/routing/global_navigator.dart';
 import 'package:adadi/src/routing/app_routes.dart';
@@ -14,7 +15,7 @@ import 'package:adadi/src/features/invoices/views/invoice_setup_screen.dart';
 
 final GoRouter appRouter = GoRouter(
   navigatorKey: rootNavigatorKey,
-  initialLocation: AppRoutes.onboarding,
+  initialLocation: AppRoutes.chatAi,
   routes: <RouteBase>[
     GoRoute(
       path: AppRoutes.onboarding,
@@ -56,5 +57,9 @@ final GoRouter appRouter = GoRouter(
       name: 'invoices',
       builder: (context, state) => const InvoiceSetupScreen(),
     ),
+    GoRoute(
+        path: AppRoutes.chatAi,
+        name: 'chatAi',
+        builder: (context, state) => ChatPage()),
   ],
 );

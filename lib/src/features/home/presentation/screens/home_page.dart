@@ -65,6 +65,12 @@ class HomePage extends ConsumerWidget {
                 icon: const Icon(Icons.receipt_long),
                 label: const Text('الفواتير والمسح الذكي'),
               ),
+              SizedBox(height: AppSpacing.sm.h),
+              FilledButton.icon(
+                onPressed: () => context.push(AppRoutes.chatAi),
+                icon: const Icon(Icons.message),
+                label: const Text('الدردشة مع Gemini'),
+              ),
             ],
           ),
         ),

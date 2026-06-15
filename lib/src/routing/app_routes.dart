@@ -16,4 +16,7 @@ abstract final class AppRoutes {
   static const String readings = '/readings';
   static const String readingsAdd = '/readings/add';
   static const String invoices = '/invoices';
+
+  // AI
+  static const String chatAi = '/chat-ai';
 }
